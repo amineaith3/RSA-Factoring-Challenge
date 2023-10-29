@@ -15,12 +15,12 @@ def factorize(n):
             factors.append(i)
             n //= i
     if len(factors) == 1:
-        print(f"{factors[0]}=1*{factors[0]}")
+        print(f"{factors[0]}={factors[0]}*1")
     else:
         p, q = factors[0], 1
         for factor in factors[1:]:
             q *= factor
-        print(f"{p*q}={p}*{q}")
+        print(f"{p*q}={q}*{p}")
 
 
 def main(filename):
